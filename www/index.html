@@ -1,14 +1,108 @@
-<html>
-    <head>
-        <title>IndeFruit</title>
-        <meta name="viewport" content="width=device-width" />
-        <link type='text/css' rel='stylesheet' href='css/fonts.css'>
-        <link type='text/css' rel='stylesheet' href='css/style.css'>
-        <script type='text/javascript' src='js/script.js'></script>
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>IndeFruit</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type='text/css' rel='stylesheet' href='css/fonts.css'>
+    <link type='text/css' rel='stylesheet' href='css/style.css'>
+    <script type='text/javascript' src='js/script.js'></script>
+</head>
+<body>
+<div class="header">
+    <div class="bannertext1">IndeFruit</div>
+    <div class="bannertext2">Only The Best For Summer</div>
+    <img src="img/logo.png" width="150" class="logo"/>
+</div>
+<div class="titlecontainer">
+    <h1>TOP FRUITS</h1>
+</div>
+<div class="content">
+    <div class="box" onclick="modal('Mangoes from India', 'img/mangoes.png', 'A mango is a juicy stone fruit (drupe) produced from numerous species of tropical trees, belonging to the flowering plant genus Mangifera, cultivated mostly for their edible fruit.', '£0.50')">
+        <table>
+            <tr>
+                <td class="one"><img src="img/mangoes.png" id="mango"/></td>
+                <td class="two">
+                    <div class="boxlabel">
+                        <b>Mangoes</b> from India
+                        <p>A mango is a juicy stone fruit (drupe) produced from numerous species of tropical trees,
+                            belonging to the flowering plant genus Mangifera, cultivated mostly for their edible fruit.</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="pricelabel">
+            <div class="labeltext"><span>£0.50</span> each</div>
+        </div>
+    </div>
+    <div class="box" onclick="modal('Strawberries from Spain', 'img/strawberries.png', 'This fruit is widely appreciated for its characteristic aroma, bright red color, juicy texture, and sweetness. It is consumed in large quantities and popular in jam, juice, pies & ice cream.', '£0.20')">
+        <table>
+            <tr>
+                <td class="one"><img src="img/strawberries.png" id="strawberry"/></td>
+                <td class="two">
+                    <div class="boxlabel">
+                        <b>Strawberries</b> from Spain
+                        <p>This fruit is widely appreciated for its characteristic aroma, bright red color, juicy texture,
+                            and sweetness. It is consumed in large quantities and popular in jam, juice, pies & ice cream.</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="pricelabel">
+            <div class="labeltext"><span>£0.20</span> each</div>
+        </div>
+    </div>
+    <div class="box" onclick="modal('Guavas from Guatemala', 'img/guavas.png', 'Guavas are a common tropical fruit cultivated in many tropical and subtropical regions, originating from an area thought to extend from Mexico or Central America.', '£0.40')">
+        <table>
+            <tr>
+                <td class="one"><img src="img/guavas.png" id="guava"/></td>
+                <td class="two">
+                    <div class="boxlabel">
+                        <b>Guavas</b> from Guatemala
+                        <p>Guavas are a common tropical fruit cultivated in many tropical and subtropical regions,
+                            originating from an area thought to extend from Mexico or Central America.</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div class="pricelabel">
+            <div class="labeltext"><span>£0.40</span> each</div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modaltitle"></h3>
+            <img id="modalimage" src="" style="width:200px"/>
+            <p id="modaldescription"></p>
+            <p id="modalprice"></p>
+            <button class="button1">Buy Now</button>
+        </div>
 
-
-
-    </body>
+    </div>
+</div>
+<script>
+    function modal(title, image, description, price) {
+        var modal = document.getElementById("myModal");
+        var span = document.getElementsByClassName("close")[0];
+        var buynow = document.getElementsByClassName("button1")[0];
+        document.getElementById("modaltitle").innerText = title;
+        document.getElementById("modaldescription").innerText = description;
+        document.getElementById("modalimage").src = image;
+        document.getElementById("modalprice").innerText = price;
+        modal.style.display = "block";
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        buynow.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    }
+</script>
+</body>
 </html>

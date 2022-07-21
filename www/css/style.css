@@ -1,0 +1,345 @@
+.header {
+    background: #FFB53C;
+    padding:30px;
+    height:40px;
+}
+.bannertext1 {
+    float:left;
+    color:white;
+    font-size:22pt;
+    font-family: Gotham-Medium, serif;
+    text-shadow: 4px 4px #D99F2E;
+}
+.bannertext2 {
+    float:right;
+    color:white;
+    font-size: 22pt;
+    font-family: Gotham-Book, serif;
+    text-shadow: 4px 4px #D99F2E;
+}
+body {
+    background-color: #FFF6E5;
+    margin:0;
+}
+.logo {
+    position: absolute;
+    top:26px;
+    left:47%;
+}
+.titlecontainer {
+    margin-top:30px;
+    text-align:center;
+}
+h1 {
+    display: inline-block;
+    margin-top:4%;
+    position: relative;
+    font-family: Gotham-XLight, serif;
+}
+h1::before, h1::after {
+    content:' ';
+    display:block;
+    position:absolute; top:50%; left:-420px;
+    width:400px;
+    border-bottom:1px solid lightgrey;
+}
+h1::after {
+    left:auto; right:-420px;
+}
+.content {
+
+}
+.box {
+    height:200px;
+    width: 50%;
+    background: white;
+    margin-bottom: 35px;
+    margin-left:25%;
+    border: 0px solid black;
+    border-radius: 9px;
+    -webkit-box-shadow: 10px 10px 5px -3px #EEE4D5;
+    -moz-box-shadow: 10px 10px 5px -3px #EEE4D5;
+    box-shadow: 10px 10px 5px -3px #EEE4D5;
+}
+
+.box img {
+    float:left;
+    margin-left:20px;
+}
+
+.boxlabel {
+    padding-top: 20px;
+    margin-left:1%;
+    font-family: Gotham-Light, serif;
+    line-height:1.7;
+    letter-spacing: 1.1px;
+}
+.boxlabel p {
+    margin-left:14px;
+    font-size:10pt;
+    letter-spacing: 1px;
+}
+.pricelabel {
+    position:relative;
+    display: inline-block;
+    color: white;
+    float:right;
+    padding:9px 20px 9px 10px;
+    font-family: Gotham-Light, serif;
+    background-color: #8DC756;
+    width: 150px;
+    font-size: 13pt;
+    margin-right:-1px;
+    letter-spacing: 1.3px;
+    overflow:hidden;
+    margin-top:-135px;
+}
+.pricelabel:after {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16%;
+    height: 100%;
+    content: '';
+    -webkit-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: skew(30deg);
+    -ms-transform: skew(30deg);
+    transform: skew(30deg);
+}
+.pricelabel span {
+    text-shadow: 2px 2px #79AB4B;
+    font-weight:bold;
+}
+.pricelabel .labeltext {
+    float:right;
+}
+.text {
+    border: 1px solid red;
+    margin-top: 10px;
+    float:right;
+    font-family: Gotham-XLight, serif;
+    line-height: 1.5;
+}
+table {
+    border:none;
+    border-collapse: collapse;
+}
+
+#mango {
+    height: 160px;
+    width: 160px;
+}
+#guava {
+    height: 160px;
+    width: 160px;
+}
+#strawberry {
+    height: 160px;
+    width:160px;
+}
+td .one {
+    width:10%;
+}
+td .two {
+    width:60%;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    border-radius:10px;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.button1 {
+    background-color: #4CAF50;
+    border-radius:10px;
+    padding:10px;
+    color:white;
+    float:right;
+    margin-top:-50px;
+}
+/* Modal Content/Box */
+.modal-content {
+    font-family: Gotham-Light, serif;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1200px) {
+    .box {
+        height:230px;
+        width: 50%;
+        background: white;
+        margin-bottom: 35px;
+        margin-left:25%;
+        border: 0px solid black;
+        border-radius: 9px;
+        -webkit-box-shadow: 10px 10px 5px -3px #EEE4D5;
+        -moz-box-shadow: 10px 10px 5px -3px #EEE4D5;
+        box-shadow: 10px 10px 5px -3px #EEE4D5;
+    }
+    #mango {
+        height: 70px;
+        width: 70px;
+    }
+    #guava {
+        height: 70px;
+        width: 70px;
+    }
+    #strawberry {
+        height: 70px;
+        width: 70px;
+    }
+    td .one {
+        width:10%;
+    }
+    td .two {
+        width:60%;
+    }
+    .bannertext1 {
+        font-size:16pt;
+    }
+    .bannertext2 {
+        font-size:16pt;
+    }
+    .boxlabel p {
+        margin-left:14px;
+        font-size:8pt;
+        letter-spacing: normal;
+    }
+    .pricelabel {
+        position:relative;
+        display: inline-block;
+        color: white;
+        float:right;
+        padding:9px 20px 9px 10px;
+        font-family: Gotham-Light, serif;
+        background-color: #8DC756;
+        width: 80px;
+        font-size: 8pt;
+        margin-right:-1px;
+        letter-spacing: normal;
+        overflow:hidden;
+        margin-top:-130px;
+    }
+    .logo {
+        position: absolute;
+        top:50px;
+        left:47%;
+        width:75px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .box {
+        height:250px;
+        width: 50%;
+        background: white;
+        margin-bottom: 35px;
+        margin-left:25%;
+        border: 0px solid black;
+        border-radius: 9px;
+        -webkit-box-shadow: 10px 10px 5px -3px #EEE4D5;
+        -moz-box-shadow: 10px 10px 5px -3px #EEE4D5;
+        box-shadow: 10px 10px 5px -3px #EEE4D5;
+    }
+    .pricelabel {
+        position:relative;
+        display: inline-block;
+        color: white;
+        float:right;
+        padding:9px 20px 9px 10px;
+        font-family: Gotham-Light, serif;
+        background-color: #8DC756;
+        width: 80px;
+        font-size: 8pt;
+        margin-right:-1px;
+        letter-spacing: normal;
+        overflow:hidden;
+        margin-top:-150px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .box {
+        height:260px;
+        width: 50%;
+        background: white;
+        margin-bottom: 35px;
+        margin-left:25%;
+        border: 0px solid black;
+        border-radius: 9px;
+        -webkit-box-shadow: 10px 10px 5px -3px #EEE4D5;
+        -moz-box-shadow: 10px 10px 5px -3px #EEE4D5;
+        box-shadow: 10px 10px 5px -3px #EEE4D5;
+    }
+    .pricelabel {
+        position:relative;
+        display: inline-block;
+        color: white;
+        float:right;
+        padding:9px 20px 9px 10px;
+        font-family: Gotham-Light, serif;
+        background-color: #8DC756;
+        width: 80px;
+        font-size: 8pt;
+        margin-right:-1px;
+        letter-spacing: normal;
+        overflow:hidden;
+        margin-top:-150px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .box {
+        height:270px;
+        width: 50%;
+        background: white;
+        margin-bottom: 35px;
+        margin-left:25%;
+        border: 0px solid black;
+        border-radius: 9px;
+        -webkit-box-shadow: 10px 10px 5px -3px #EEE4D5;
+        -moz-box-shadow: 10px 10px 5px -3px #EEE4D5;
+        box-shadow: 10px 10px 5px -3px #EEE4D5;
+    }
+    .pricelabel {
+        position:relative;
+        display: inline-block;
+        color: white;
+        float:right;
+        padding:9px 20px 9px 10px;
+        font-family: Gotham-Light, serif;
+        background-color: #8DC756;
+        width: 80px;
+        font-size: 8pt;
+        margin-right:-1px;
+        letter-spacing: normal;
+        overflow:hidden;
+        margin-top:-260px;
+    }
+}
